@@ -1,0 +1,64 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container text-white" id="main-div">
+        <div class="row-fluid" id="row-top">
+            <div class="col-11 d-flex justify-content-center align-items-center time-display" id="time-display">
+                <label id="time-label" class="blue-color">20 : 00</label>
+            </div>
+            <h1 class="col-11 d-flex justify-content-center pt-3" id="session-header">Session 1</h1>
+            <hr style="height:1px; width:100%; border-width:0; background-color:white">
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-12 d-flex flex-column align-items-center justify-content-center">
+                session time
+                <label id="session-time">20 min</label>
+                <div class="d-flex">
+                    <button type="button" class="btn btn-dark mr-2 btn-sm custom-button" id="dec-ses">-</button>
+                    <button type="button" class="btn btn-dark btn-sm ml-2 btn-sm custom-button" id="inc-ses">+</button>
+                </div>
+            </div>
+            <div class="col-md-6 col-12 d-flex flex-column align-items-center justify-content-center">
+                break time
+                <label id="break-time">5 min</label>
+                <div class="d-flex">
+                    <button type="button" class="btn btn-dark mr-2 btn-sm custom-button" id="dec-br">-</button>
+                    <button type="button" class="btn btn-dark btn-sm ml-2 btn-sm custom-button" id="inc-br">+</button>
+                </div>
+            </div>
+            <hr style="height:1px; width:93%; border-width:0; background-color:white">
+        </div>
+        <div class="row">
+            <div class="col-6 d-flex justify-content-center">
+                <button type="button" class="btn btn-dark" id="start-btn">Start</button>
+                <button type="button" class="btn btn-dark d-none" id="pause-btn">Pause</button>
+            </div>
+            <div class="col-6 d-flex justify-content-center">
+                <button type="button" class="btn btn-dark" id="reset-btn">Reset</button>
+            </div>
+        </div>
+        <svg class="progress" width="450" style="height:200px">
+            <rect class="progress-rect" width="100%" height="100%" fill="transparent" stroke="blue" stroke-width="30"/>
+        </svg>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
+    <script src="javascript.js"></script>
+</body>
+
+</html>

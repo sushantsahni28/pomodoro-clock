@@ -1,0 +1,47 @@
+#main-div{
+    width: 500px;
+    height: 540px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.time-display{
+    width: 150px;
+    height: 170px;
+    background: rgba(255, 255, 255, 0.9);
+    margin: 13px 1px;
+}
+#row-top{
+    width: 500px;
+    padding: 20px;
+}
+#time-label{
+    font-size: 40px;
+    font-weight: 600;
+}
+.red-color{
+    color:red;
+}
+.blue-color{
+    color: rgb(0, 160, 176);
+}
+.custom-button{
+    width: 40px !important;
+}
+#session-time{
+    font-size: 30px;
+    color:rgb(0, 160, 176)
+}
+#break-time{
+    font-size: 30px;
+    color:red;
+}
+.progress{
+    position: absolute;
+    top:0;
+    bottom: 515px;
+    left:0;
+    right:5px;
+    margin: auto;
+}
+svg{
+    z-index: -1;
+}
